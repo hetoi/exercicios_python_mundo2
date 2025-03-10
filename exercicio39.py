@@ -4,9 +4,9 @@
 # ou se já passou do tempo do alistamento. 
 # Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
-import datetime
+from datetime import date
 
-ano_atual = datetime.datetime.now().year
+ano_atual = date.today().year
 ano_nascimento = int(input("Digite o seu ano de nascimento: "))
 idade = ano_atual - ano_nascimento
 ano_de_alistamento = ano_nascimento + 18

@@ -16,14 +16,17 @@ pagamento = int(input("Qual a opção? "))
 
 if pagamento == 1:
     preco = preco*0.9
-    print("O valor da compra será de RS{}".format(preco))
+    print("O valor da compra com 10% de desconto será de RS{:.2f}".format(preco))
 elif pagamento == 2:
     preco = preco * 0.95
-    print("O valor da compra será de R${}".format(preco))
+    print("O valor da compra com 5% de desconto será de R${:.2f}".format(preco))
 elif pagamento == 3:
     parcela = (preco/2)
-    print("Cada parcela ficará no valor de R${}".format(parcela))
+    print("O valor total da compra será {:.2f}".format(preco))
+    print("Cada parcela ficará no valor de R${:.2f}".format(parcela))
 elif pagamento == 4:
     qtd_parcelas = int(input("Em quantas parcelas? "))
-    parcela = (preco*1.2)/qtd_parcelas
-    print("Em {} parcelas, cada uma ficará no valor de R${}.".format(qtd_parcelas, parcela))
+    preco_final = preco*1.2
+    parcela = preco_final/qtd_parcelas
+    print("O valor total da compra com 20% de juros será R${:.2f}".format(preco_final))
+    print("Em {} parcelas, cada uma ficará no valor de R${:.2f}.".format(qtd_parcelas, parcela))

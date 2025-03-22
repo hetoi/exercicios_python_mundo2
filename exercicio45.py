@@ -30,8 +30,9 @@ if escolha_jogador <= 3:
     
     # É preciso .format dos prints seguintes 
     # Quebrar a linha da mensagem 
-    print("COMPUTADOR JOGOU {}".format(mensagem))
-    print("JOGADOR JOGOU {}".format(mensagem))
+    print("COMPUTADOR JOGOU {}".format(escolha_jogador))
+    print("JOGADOR JOGOU {}".format(escolha_programa))
+    print(str(mensagem))
 
 else:
     print("OPÇÃO INVÁLIDA!")
